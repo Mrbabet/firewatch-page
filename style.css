@@ -1,0 +1,49 @@
+header {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    padding: 16px 32px;
+    display: block;
+    background-color: #210002;
+    color: #ffaf00;
+  }
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    font-weight: 900;
+  }
+  ul li:nth-of-type(1) {
+    margin-right: auto;
+  }
+}
+
+main {
+  background-image: url(/images/keyart-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  min-height: 550px;
+}
+@media screen and (min-width: 600px) {
+  main {
+    all: unset;
+  }
+}
+.paralax {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.paralax img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
