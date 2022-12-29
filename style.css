@@ -1,6 +1,9 @@
 header {
   display: none;
 }
+.wrapper {
+  padding: 32px 48px;
+}
 
 @media screen and (min-width: 600px) {
   header {
@@ -35,24 +38,24 @@ main {
   }
 }
 .paralax {
-  background-color: #ffaf00;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   position: relative;
+  height: 1000px;
+  overflow: hidden;
 }
-.paralax img {
+
+img {
   position: absolute;
-  width: 100%;
   height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  object-fit: cover;
   top: 0;
   left: 0;
-  object-fit: cover;
 }
 
 .sec-2 {
-  overflow: hidden;
+  z-index: 100;
   background-color: #210002;
-  min-height: 100vh;
+  height: 100vh;
+  color: white;
 }
