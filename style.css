@@ -35,6 +35,7 @@ main {
   }
 }
 .paralax {
+  background-color: #ffaf00;
   min-height: 100vh;
   position: relative;
   overflow: hidden;
@@ -46,4 +47,10 @@ main {
   top: 0;
   left: 0;
   object-fit: cover;
+}
+
+.sec-2 {
+  overflow: hidden;
+  background-color: #210002;
+  min-height: 100vh;
 }
