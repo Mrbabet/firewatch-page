@@ -36,9 +36,11 @@ main {
 }
 .paralax {
   background-color: #ffaf00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 .paralax img {
   position: absolute;
