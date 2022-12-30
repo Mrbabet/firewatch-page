@@ -19,5 +19,6 @@ window.addEventListener("scroll", function () {
   paralax5.style.top = value * -0.36 + "px";
   paralax6.style.top = value * -0.49 + "px";
   paralax7.style.top = value * -0.69 + "px";
-  paralax8.style.top = -100 + "px";
+  paralax8.style.top = value * -1 + "px";
+  paralax.style.top = value * 1 + "px";
 });
