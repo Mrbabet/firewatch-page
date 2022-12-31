@@ -28,44 +28,37 @@ header {
     margin-right: auto;
   }
 }
-
-main {
+.non-paralax {
   background-image: url(/images/keyart-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
   min-height: 550px;
 }
+.paralax {
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
-  main {
-    all: unset;
+  .non-paralax {
+    display: none;
+  }
+  .paralax {
+    display: block;
+    z-index: -10;
+    position: relative;
+    min-height: 100vh;
+  }
+  img {
+    position: absolute;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
   }
 }
 
-.paralax {
-  z-index: 1;
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-}
-
-img {
-  position: absolute;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-}
-
 .sec-2 {
-  position: relative;
-  z-index: 100;
+  z-index: 0;
   background-color: #210002;
-  height: 100vh;
   color: white;
 }
