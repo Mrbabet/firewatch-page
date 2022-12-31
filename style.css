@@ -4,6 +4,13 @@ header {
 .wrapper {
   padding: 32px 48px;
 }
+@media screen and (min-width: 1100px) {
+  .wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 32px 48px;
+  }
+}
 
 @media screen and (min-width: 600px) {
   header {
@@ -60,5 +67,63 @@ header {
 .sec-2 {
   z-index: 0;
   background-color: #210002;
-  color: white;
+}
+.sec-2 .heading {
+  color: #ffaf00;
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  margin-bottom: 2rem;
+}
+.sec-2 ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 325px));
+  column-gap: 3rem;
+  row-gap: 1rem;
+  justify-content: center;
+}
+.sec-2 ul li {
+  text-align: center;
+  color: #210002;
+  text-decoration: none;
+  padding: 7px 14px;
+  background-color: #ffaf00;
+  width: 100%;
+}
+
+.sec-2 ul li a {
+  color: #210002;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.sec-3 {
+  z-index: 0;
+  background-color: #210002;
+  color: #ffaf00;
+}
+.sec-3 h2 {
+  text-align: center;
+}
+.sec-3 .column-paragraph {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  text-align: justify;
+  padding-block: 1rem;
+}
+.column-paragraph .column-1,
+.column-paragraph .column-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sec-3 .column-paragraph a {
+  background-color: #973700;
+  color: #210002;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 7px 14px;
 }
